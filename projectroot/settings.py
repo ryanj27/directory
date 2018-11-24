@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'debug_toolbar',
+    'explorer',
 ]
 
 MIDDLEWARE = [
@@ -123,6 +124,9 @@ if DEBUG == True:
         "SHOW_TOOLBAR_CALLBACK": show_toolbar,
         "SHOW_COLLAPSED": True,
     }
+
+EXPLORER_CONNECTIONS = { 'Default': 'default' }
+EXPLORER_DEFAULT_CONNECTION = 'default'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
