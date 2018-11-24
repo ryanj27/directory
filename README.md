@@ -1,0 +1,1 @@
+## A simple Django app using Docker Compose
